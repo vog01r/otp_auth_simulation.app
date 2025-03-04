@@ -1,0 +1,26 @@
+# Environnements virtuels
+venv/
+__pycache__/
+*.pyc
+
+# Fichiers de configuration
+.env
+
+# Fichiers de logs
+*.log
+server_api_sms.py
+
+# Fichiers de secret
+secret.json
+
+# Fichiers de données
+*.sqlite3
+
+# Fichiers de test
+*.pytest_cache/
+
+# Autres
+.DS_Store
+.idea/
+.vscode/
+*.swp 
