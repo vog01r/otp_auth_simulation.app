@@ -59,9 +59,12 @@ Ce script utilise la bibliothèque `pyotp` pour générer un OTP basé sur le te
 ## Structure du Projet
 
 - **OTP_SMS** : Contient le serveur API pour l'envoi et la vérification des OTP par SMS.
+
    - **server_api_sms.py** : Simule le serveur API pour l'envoi et la vérification des OTP par SMS.
    - **otp_auth_simulation_SMS.py** : Simule l'utilisation de l'OTP par SMS.
+
 - **OTP_APP** : Contient l'application pour la génération et la vérification des OTP via QR Code.
+
    - **otp_auth_simulation_qrcode_gen.py** : Simule la génération d'un OTP via QR Code.
    - **otp_auth_simulation_qrcode_use.py** : Simule l'utilisation d'un OTP via QR Code.
 
