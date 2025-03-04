@@ -6,7 +6,7 @@ Ce projet propose une simulation d'authentification par mot de passe à usage un
 
 1. **Clonez le dépôt :**
    ```bash
-   git clone <URL_DU_DEPOT>
+   git clone https://github.com/vog01r/otp_auth_simulation.app.git
    cd otp_auth_simulation
    ```
 
@@ -40,7 +40,15 @@ Ce script utilise l'API SMS pour envoyer un OTP à un numéro de téléphone sp�
 
 ### Génération et Vérification d'OTP via QR Code
 
-Pour générer et vérifier un OTP via QR Code, exécutez le script suivant :
+Pour générer et vérifier un OTP via QR Code, exécutez les scripts suivants :
+
+Pour générer un OTP via QR Code, exécutez le script suivant :
+
+```bash
+python OTP_APP/otp_auth_simulation_qrcode_gen.py
+```
+
+Pour vérifier un OTP via QR Code, exécutez le script suivant :
 
 ```bash
 python OTP_APP/otp_auth_simulation_qrcode_use.py
@@ -51,9 +59,11 @@ Ce script utilise la bibliothèque `pyotp` pour générer un OTP basé sur le te
 ## Structure du Projet
 
 - **OTP_SMS** : Contient le serveur API pour l'envoi et la vérification des OTP par SMS.
+   - **server_api_sms.py** : Simule le serveur API pour l'envoi et la vérification des OTP par SMS.
+   - **otp_auth_simulation_SMS.py** : Simule l'utilisation de l'OTP par SMS.
 - **OTP_APP** : Contient l'application pour la génération et la vérification des OTP via QR Code.
-- **server_api_sms.py** : Simule le serveur API pour l'envoi et la vérification des OTP par SMS.
-- **server_api_qrcode.py** : Simule le serveur API pour la génération et la vérification des OTP via QR Code.
+   - **otp_auth_simulation_qrcode_gen.py** : Simule la génération d'un OTP via QR Code.
+   - **otp_auth_simulation_qrcode_use.py** : Simule l'utilisation d'un OTP via QR Code.
 
 ## Dépendances
 
